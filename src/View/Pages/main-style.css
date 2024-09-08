@@ -1,0 +1,110 @@
+body, html {
+    margin: 0;
+    padding: 0;
+
+}
+
+:root {
+--maxwidth: 1280px;
+--marginwidth: 0 auto;
+
+
+--DarkBlue-DarkModeElements: hsl(209, 23%, 22%);
+--VeryDarkBlue-DarkModeBackground: hsl(207, 26%, 17%);
+--VeryDarkBlue-LightModeText: hsl(200, 15%, 8%);
+--DarkGray-LightModeInput: hsl(0, 0%, 52%);
+--VeryLightGray-LightModeBackground: hsl(0, 0%, 98%);
+--White-DarkModeText-LightModeElements: hsl(0, 0%, 100%);
+}
+
+.lightthemeBackGround{
+    background-color: var(--VeryLightGray-LightModeBackground);
+}
+
+.lightthemeNavBar {
+    background-color: var(--White-DarkModeText-LightModeElements);
+}
+
+.darkthemeBackGround {
+    background-color: var(--VeryDarkBlue-DarkModeBackground);
+}
+
+.darkthemeNavBar {
+    background-color: var(--DarkBlue-DarkModeElements);
+}
+
+.gallery {
+    max-width: var(--maxwidth);
+    margin: var(--marginwidth);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 50px;
+    column-gap: 55px;
+    padding-top: 50px;
+}
+
+header div{
+    max-width: var(--maxwidth);
+    margin: var(--marginwidth);
+}
+
+.darkthemeButton {
+    background-color:  var(--VeryDarkBlue-DarkModeBackground );
+    color: var(--White-DarkModeText-LightModeElements) ;
+}
+
+.lightthemeButton {
+background-color: var(--VeryLightGray-LightModeBackground);
+color: var(--VeryDarkBlue-LightModeText);
+}
+
+.lightText {
+   color: var(--White-DarkModeText-LightModeElements);
+}
+
+.darkText {
+   color: var(--VeryDarkBlue-LightModeText);
+}
+
+#mainbutton {
+    margin-top: 40px;
+    margin-left: 600px;
+    margin-bottom: 40px;
+    width: 240px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+    .gallery {
+     max-width: 800px;
+     margin: 0;
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+ 
+    } 
+ }
+
+@media screen and (max-width: 800px) {
+   .gallery {
+    max-width: 800px;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+   } 
+}
+
+@media screen and (max-width: 500px) {
+    .gallery {
+     max-width: 600px;
+     margin: 0;
+     display: grid;
+     grid-template-columns: repeat(1, 1fr);
+    } 
+ }
+ 

@@ -1,0 +1,42 @@
+  
+#bigFlagContainer {
+   width: 1280px;
+   margin: 0 auto;
+}
+  
+  .lightText {
+    color: hsl(0, 0%, 100%);
+ }
+ 
+ .darkText {
+    color: hsl(200, 15%, 8%);;
+ }
+
+ #btnback {
+   background: none;
+   background-color:     hsl(209, 23%, 22%);
+   border: none;
+   margin-top: 50px;
+   margin-bottom: 70px;
+   width: 135px;
+   height: 40px;
+   border-radius: 5px;
+}
+
+#imgback {
+   margin-right: 10px;
+   margin-top: 5px;
+}
+#btnp {
+
+}
+
+.country__container {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+
+.country__description {
+
+}
